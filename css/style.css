@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.about_title {
+    padding: 0 30%;
+}
+.card-img img{
+    position: relative;
+    bottom: 2.5rem;
+}
+.letter {
+    padding: 5rem;
+    background-color: blue;
+    color: #fff;
+    font-size: 10rem;
+    line-height: 10rem;
+    border-radius: 50%;
+}
+.carte:hover {
+    background: rgb(23, 119, 245);
+    color: #fff;
+    transition: background .3s ease-in-out;
+}
+@media only screen and (max-width:992px) {
+    .about_title {
+        padding: 0;
+    }
+    .about_title h1 {
+        font-size: 2rem;
+    }
+    .home_title {
+        margin-bottom: 1rem;
+    }
+    .carte {
+        margin: 1.5rem 0;
+    }
+    .letter {
+        display: none;
+    }
+}
