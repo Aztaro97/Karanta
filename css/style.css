@@ -6,9 +6,15 @@ html, body {
     height: 100%;
     width: 100%;
 }
-
+.hide_case {
+    background-image: url('../images/img-back.jpg');
+    background-size:cover;
+}
 .about_title {
     padding: 0 30%;
+}
+.page_title {
+    font-size: 4.5rem;
 }
 .card-img img{
     position: relative;
@@ -16,7 +22,7 @@ html, body {
 }
 .letter {
     padding: 5rem;
-    background-color: blue;
+    background-color:#007BFF;
     color: #fff;
     font-size: 10rem;
     line-height: 10rem;

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Accueill</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="navigation">
     <!---------------  HEADER    ------------>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navigation">
             <div class="container">
                 <a href="#" class="navbar-brand font-weight-bold"><span class="rounded-circle bg-primary h3 py-1 px-2 text-white">K</span>aranta</a>
                 <div class="navbar-toggler">
@@ -21,16 +21,16 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Accueil</a>
+                            <a href="#accueil" class="nav-link">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">A propos</a>
+                            <a href="#about" class="nav-link">A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Les auteurs</a>
+                            <a href="#auteurs" class="nav-link">Les auteurs</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
+                            <a href="#contact" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -41,18 +41,20 @@
 
     <!----------------    CONTAINER    ------------>
     <main>
-        <section class="home_page pt-5">
-                <div class="container hide_case py-5">
-                    <div class="row text-center">
-                        <div class="col-lg-6 col-md-12 col-sm 12 home_title">
-                            <h1>Lire & Ecrire, Compter, Coder...</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, sit,</p>
-                            <button class="btn btn-info">
-                                <i class="fas fa-check-square"></i> Voir plus
-                            </button>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm 12">
-                            <img src="images/bulle-hipster_98292-1546.jpg" alt="" class="img-fluid">
+        <section class="home_page pt-5" id="accueil">
+                <div class="hide_case py-5">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-lg-6 col-md-12 col-sm 12 home_title text-white">
+                                <h1 class="page_title pt-5">Lire & Ecrire, Compter, Coder...</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, sit,</p>
+                                <button class="btn btn-info">
+                                    <i class="fas fa-check-square"></i> Voir plus
+                                </button>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm 12">
+                                <img src="images/students.jpg" alt="School students" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,7 +115,7 @@
 
 
         <!-------------   SECTION A PROPOS   ------------->
-        <section class="about bg-light py-5">
+        <section class="about bg-light py-5" id="about">
             <div class="container">
                 <div class="about_title text-center">
                     <h1 class="text-primary">Pourquoi ce livre ?</h1>
@@ -124,7 +126,7 @@
                 <div class="accordion py-3" id="accordiont">
                     <div class="card text-center">
                         <div class="card-header">
-                            <h5 class="h5 font-weight-bold" data-target="#collapse1" data-toggle="collapse" >Inspiration</h5>
+                            <h5 class="h5 font-weight-bold" data-target="#collapse1" data-toggle="collapse" ><span><i class="fas fa-arrow-alt-circle-down"></i></span> Inspiration</h5>
                         </div>
                         <div class="collapse hide" id="collapse1" data-parent="#accordiont">
                             <div class="card-body">
@@ -133,7 +135,7 @@
                         </div>
 
                         <div class="card-header">
-                            <h5 class="h5 font-weight-bold" class="btn h5" data-target="#collapse2" data-toggle="collapse">Savoir</h5>
+                            <h5 class="h5 font-weight-bold" class="btn h5" data-target="#collapse2" data-toggle="collapse"> <span><i class="fas fa-arrow-alt-circle-down"></i></span> Savoir</h5>
                         </div>
                         <div class="collapse hide" id="collapse2" data-parent="#accordiont">
                             <div class="card-body">
@@ -142,7 +144,7 @@
                         </div>
 
                         <div class="card-header">
-                            <h5 class="h5 font-weight-bold" data-target="#collapse3" data-toggle="collapse">Opportunité</h5>
+                            <h5 class="h5 font-weight-bold" data-target="#collapse3" data-toggle="collapse"> <span><i class="fas fa-arrow-alt-circle-down"></i></span> Opportunité</h5>
                         </div>
                         <div class="collapse hide" id="collapse3" data-parent="#accordiont">
                             <div class="card-body">
@@ -159,7 +161,7 @@
 
 
         <!----------   SECTION AUTEURES  ---   -->
-        <section>
+        <section id="auteurs">
             <div class="container py-5">
                 <div class="about_title text-center">
                     <h1 class="text-primary">Les auteurs</h1>
@@ -173,15 +175,15 @@
                             <div class="card carte">
                                 <div class="card-body text-center">
                                     <div class="card-img">
-                                        <img class="rounded-circle" src="images/ingi.jpg" width="110" height="110" alt="">
+                                        <img class="rounded-circle" src="images/profil1.png" width="110" height="110" alt="">
                                     </div>
-                                    <h4 class="card-title">Rachida Zakou</h4>
+                                    <h4 class="card-title">Omar OHMS</h4>
                                     <h5 class="lead text-black-50">Lead Editrice</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                     <div class="social_media d-flex justify-content-around">
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
+                                        <a href="#"> <i class="fab fa-facebook-f"> </i></a>
+                                        <a href="#"> <i class="fab fa-twitter"> </i></a>
+                                        <a href="#"> <i class="fab fa-instagram"> </i></a>
                                     </div>
                                 </div>
                             </div>
@@ -190,15 +192,15 @@
                             <div class="card carte">
                                 <div class="card-body text-center">
                                     <div class="card-img">
-                                        <img class="rounded-circle" src="images/ingi.jpg" width="110" height="110" alt="">
+                                        <img class="rounded-circle" src="images/profil2.png" width="110" height="110" alt="">
                                     </div>
-                                    <h4 class="card-title">Rachida Zakou</h4>
+                                    <h4 class="card-title">Haoua Henikoy</h4>
                                     <h5 class="lead text-black-50">Lead Editrice</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                     <div class="social_media d-flex justify-content-around">
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
+                                        <a href="#"> <i class="fab fa-facebook-f"> </i></a>
+                                        <a href="#"> <i class="fab fa-twitter"> </i></a>
+                                        <a href="#"> <i class="fab fa-instagram"> </i></a>
                                     </div>
                                 </div>
                             </div>
@@ -207,15 +209,15 @@
                             <div class="card carte">
                                 <div class="card-body text-center">
                                     <div class="card-img">
-                                        <img class="rounded-circle" src="images/ingi.jpg" width="110" height="110" alt="">
+                                        <img class="rounded-circle" src="images/profil3.png" width="110" height="110" alt="">
                                     </div>
-                                    <h4 class="card-title">Rachida Zakou</h4>
+                                    <h4 class="card-title">Oumar Mohamed</h4>
                                     <h5 class="lead text-black-50">Lead Editrice</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                     <div class="social_media d-flex justify-content-around">
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
+                                        <a href="#"> <i class="fab fa-facebook-f"> </i></a>
+                                        <a href="#"> <i class="fab fa-twitter"> </i></a>
+                                        <a href="#"> <i class="fab fa-instagram"> </i></a>
                                     </div>
                                 </div>
                             </div>
@@ -224,15 +226,15 @@
                             <div class="card carte">
                                 <div class="card-body text-center">
                                     <div class="card-img">
-                                        <img class="rounded-circle" src="images/ingi.jpg" width="110" height="110" alt="">
+                                        <img class="rounded-circle" src="images/profil4.png" width="110" height="110" alt="">
                                     </div>
-                                    <h4 class="card-title">Rachida Zakou</h4>
+                                    <h4 class="card-title">Hassia Henikoye</h4>
                                     <h5 class="lead text-black-50">Lead Editrice</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                                     <div class="social_media d-flex justify-content-around">
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
-                                        <a href="#"> <i class="fas fa-check-square"> </i></a>
+                                        <a href="#"> <i class="fab fa-facebook-f"> </i></a>
+                                        <a href="#"> <i class="fab fa-twitter"> </i></a>
+                                        <a href="#"> <i class="fab fa-instagram"> </i></a>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +249,7 @@
 
 
         <!------------            SECTION CONTACT   ------------------>
-        <section class="contact bg-light">
+        <section class="contact bg-light" id="contact">
             <div class="container py-5">
                 <h3>Nous contacter</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet</p>
@@ -257,19 +259,19 @@
                             <div class="form-row">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">@</div>
+                                        <div class="input-group-text"> <i class="fas fa-user"></i> </div>
                                     </div>
                                     <input type="text" class="form-control" placeholder="Nom">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text"> <i class="fas fa-mail"></i> </div>
+                                        <div class="input-group-text"> <i class="fas fa-envelope"></i> </div>
                                     </div>
                                     <input type="text" class="form-control" placeholder="Email">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text">M</div>
+                                        <div class="input-group-text"> <i class="fas fa-pen"></i> </div>
                                     </div>
                                     <textarea class="form-control" placeholder="Message" id="" cols="30" rows="10"></textarea>
                                 </div>
